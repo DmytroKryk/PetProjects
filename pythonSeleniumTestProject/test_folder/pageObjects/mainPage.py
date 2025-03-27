@@ -16,7 +16,7 @@ class MainPage(TestBasePage):
     """Single component interaction"""
 
     def accept_cookies(self):
-        element = self.wait.until(EC.presence_of_element_located((By.XPATH, ".//a[@aria-label='allow cookies']")))
+        element = self.wait.until(EC.presence_of_element_located((By.XPATH, ".//button[@aria-label='allow cookies']")))
         element.click()
 
     def click_logo_button(self):
